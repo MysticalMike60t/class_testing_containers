@@ -1,0 +1,8 @@
+name: "${NAME:?error}"
+
+include:
+    - path:
+        - "${FRAGS_DIR:?error}/windows_11.yml"
+      project_directory: .
+      env_file:
+        - "${CONFS_DIR:?error}/.env.win11.config"
